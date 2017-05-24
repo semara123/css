@@ -222,7 +222,7 @@
 	position:absolute;
 	top:50%;
 	margin-top:-2em;
-	z-index:60;
+	z-index:999999;
 	height: 4.5em;
 	width: 4.5em;
 	background-image: url(./arrows.png);
@@ -284,7 +284,7 @@
 	margin: 0.5em;
 	margin-left: 0;
 	color:#5d5d5d;
-	z-index: 50;
+	z-index: 999999;
 }
 #wowslider-container1 .ws-title div,#wowslider-container1 .ws-title span{
 	display:inline-block;

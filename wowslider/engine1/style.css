@@ -30,6 +30,7 @@
 	list-style:none;
 	margin:0;
 	padding:0;
+	z-index:999999;
 	border-spacing:0;
 	overflow: visible;
 	/*table-layout:fixed;*/
@@ -40,6 +41,7 @@
 	height:100%;
 	line-height:0; /*opera*/
 	overflow: hidden;
+	z-index:999999;
 	float:left;
 	/*font-size:0;*/
 	padding:0 0 0 0 !important;

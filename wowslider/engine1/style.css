@@ -11,7 +11,7 @@
 	max-width: 100%;
 	max-height:480px;
 	margin:0px auto 0px;
-	z-index:90;
+	z-index:999999;
 	text-align:left; /* reset align=center */
 	font-size: 10px;
 	text-shadow: none; /* fix some user styles */
@@ -30,6 +30,7 @@
 	list-style:none;
 	margin:0;
 	padding:0;
+	z-index:999999;
 	border-spacing:0;
 	overflow: visible;
 	/*table-layout:fixed;*/
@@ -40,6 +41,7 @@
 	height:100%;
 	line-height:0; /*opera*/
 	overflow: hidden;
+	z-index:999999;
 	float:left;
 	/*font-size:0;*/
 	padding:0 0 0 0 !important;
@@ -220,7 +222,7 @@
 	position:absolute;
 	top:50%;
 	margin-top:-2em;
-	z-index:60;
+	z-index:999999;
 	height: 4.5em;
 	width: 4.5em;
 	background-image: url(./arrows.png);
@@ -282,7 +284,7 @@
 	margin: 0.5em;
 	margin-left: 0;
 	color:#5d5d5d;
-	z-index: 50;
+	z-index: 999999;
 }
 #wowslider-container1 .ws-title div,#wowslider-container1 .ws-title span{
 	display:inline-block;

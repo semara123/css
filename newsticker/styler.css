@@ -1,97 +1,68 @@
-@import 'https://fonts.googleapis.com/css?family=Baloo+Bhai';
-.container {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  height: 340px;
-  width: 80%;
-  max-width: 340px;
-  margin: 10vh auto 0;
-}
-
-btnn {
-  padding: .675em 40px;
-  position: relative;
-  text-align: center;
-  font-family: 'Baloo Bhai';
-  letter-spacing: .15em;
-  font-size: 1.2rem;
+.btnp {
+  color: #3498DB;
+  background: 0;
+  margin: 10px 0;
+  border: 1.5px solid #3498DB;
+  font: 25px 'open sans', sans-serif;
   cursor: pointer;
-  transition: 0.2s linear color;
+  padding: 8px 25px;
+  border-radius: 0.5vh;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out .1s;
+  transition: all .2s ease-in-out .1s;
+  z-index: 0;
 }
-
-btnn:before {
+.btnp:before, .btnp:after {
+  background: #3498DB;
   content: '';
+  width: 410px;
+  height: 500px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+  top: -350%;
   z-index: -1;
-  transform: scale(1, 1);
-  transition: 0.2s linear all;
-  border-radius: .4rem;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btnp:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: -190%;
+}
+.btnp:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: -190%;
+  top: -675%;
+}
+.btnp:hover:before {
+  left: 10%;
+}
+.btnp:hover:after {
+  right: 10%;
 }
 
-btnn:hover:before {
-  transform: scale(1.04, 1.02);
+/* Coloring */
+.yelloww {
+  color: lime;
+  border-color: lime;
+}
+
+.yelloww:after,
+.yelloww:before {
+  background: lime;
+}
+
+.green {
+  color: lightgreen;
+  border-color: lightgreen;
+}
+
+.green:after,
+.green:before {
+  background: lightgreen;
+}
+
+.btnp:hover {
   color: #fff;
-}
-
-/* color stuff */
-
-body{
-  background: #fafbfc;
-}
-
-.red{
-  color: #ff5252;
-}
-.red:hover{
-  color: #aa1414;
-}
-.red:before{
-  border: 4px solid #ff5252;
-}
-.red:hover:before{
-  background-color: #ff5252;
-}
-.blue{
-  color: #1e83ec;
-}
-.blue:hover{
-  color: #0a42a1;
-}
-.blue:before{
-  border: 4px solid #1e83ec;
-}
-.blue:hover:before{
-  background-color: #1e83ec;
-}
-
-.purple{
-  color: #673ab7;
-}
-.purple:hover{
-  color: #312174;
-}
-.purple:before{
-  border: 4px solid #673ab7;
-}
-.purple:hover:before{
-  background-color: #673ab7;
-}
-
-.green{
-  color: #1c9963;
-}
-.green:hover{
-  color: #0a6842;
-}
-.green:before{
-  border: 4px solid #1c9963;
-}
-.green:hover:before{
-  background-color: #1c9963;
 }

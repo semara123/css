@@ -1,0 +1,68 @@
+.btnp {
+  color: #3498DB;
+  background: 0;
+  margin: 10px 0;
+  border: 1.5px solid #3498DB;
+  font: 25px 'open sans', sans-serif;
+  cursor: pointer;
+  padding: 8px 25px;
+  border-radius: 0.5vh;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out .1s;
+  transition: all .2s ease-in-out .1s;
+  z-index: 0;
+}
+.btnp:before, .btnp:after {
+  background: #3498DB;
+  content: '';
+  width: 410px;
+  height: 500px;
+  position: absolute;
+  top: -350%;
+  z-index: -1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btnp:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: -190%;
+}
+.btnp:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: -190%;
+  top: -675%;
+}
+.btnp:hover:before {
+  left: 10%;
+}
+.btnp:hover:after {
+  right: 10%;
+}
+
+/* Coloring */
+.yelloww {
+  color: lime;
+  border-color: lime;
+}
+
+.yelloww:after,
+.yelloww:before {
+  background: lime;
+}
+
+.green {
+  color: lightgreen;
+  border-color: lightgreen;
+}
+
+.green:after,
+.green:before {
+  background: lightgreen;
+}
+
+.btnp:hover {
+  color: #fff;
+}

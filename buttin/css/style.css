@@ -1,0 +1,70 @@
+@emerland:      #2ecc71;
+@orange:        #f39c12;
+@peter-river:   #3498db;
+
+@sq: 65px; // set size of the buttonn
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+          transition: @transition;
+}
+buttonn {
+  &.green {
+     background: @emerland; 
+  }
+  &.orange {
+    background: @orange;
+  }
+  //position: relative;
+ float: left;
+  
+  width: @sq;
+  text-align: center;
+  padding: 0;
+  margin: 10px;
+  
+  //width: @sq;
+  height: @sq;
+  border: 0;
+  background: @emerland;
+  color: white;
+  overflow: hidden;
+  //line-height:@sq;
+  &:hover {
+    cursor: pointer;
+    > div {
+      margin-top: -@sq;
+      > i {
+        opacity: .5;
+      }
+    }
+  }
+   i {
+    .transition(All 0.25s ease);
+  margin: 0;
+    padding: 0;
+  width: @sq - 5;
+  height: @sq;
+  font-size: @sq - 20;
+    line-height:@sq!important;
+  display: block;
+    //background: #ddd;
+ }
+  div {
+    .transition(All 0.25s ease);
+   
+  }
+ span {
+    display: table-cell;
+    width: @sq - 5;
+    max-width: @sq - 5;
+    height: @sq;
+    vertical-align: middle;
+    font-size: @sq / 4;
+    line-height: (@sq / 4) + 2;
+    
+    //background: #eee;
+  }
+  
+  
+}

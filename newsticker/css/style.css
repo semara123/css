@@ -80,8 +80,8 @@ button:active
 .button_danger { background:#e34704; }
 .button_danger:active { background:#c5471d; }
 
-.button_cermat { background:#D91E18}
-.buttin_cermat:active {background: #CF000F}
+.button_cermat { background:#D91E18;}
+.buttin_cermat:active {background: #CF000F;}
 
 /* Ripple */
 

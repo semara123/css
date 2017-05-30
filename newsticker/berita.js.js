@@ -1,4 +1,5 @@
-      
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>  
+<script src="http://www.jquerynewsticker.com/includes/jquery.ticker.js" type="text/javascript"></script>        
          
 var ListBlogLink = "http://www.tdcsmansa2017.com";           
 var ListCount = 5;           

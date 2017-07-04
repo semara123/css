@@ -85,21 +85,33 @@ var ringer = {
     $r.ctx.clearRect($r.actual_size*-0.5,$r.actual_size*-0.5,$r.actual_size,$r.actual_size);
 
     // first circle
+<<<<<<< HEAD
     $r.ctx.strokeStyle = "rgba(174, 168, 211,0.6)";
+=======
+    $r.ctx.strokeStyle = "rgba(255,109,0 ,1)";
+>>>>>>> b653f2b669f0ca5d0a4a9069b1ae499f65f99958
     $r.ctx.beginPath();
     $r.ctx.arc(0,0,$r.r_size/2,0,2 * Math.PI, 2);
     $r.ctx.lineWidth =$r.r_thickness;
     $r.ctx.stroke();
    
     // second circle
+<<<<<<< HEAD
     $r.ctx.strokeStyle = "rgba(102, 51, 153, 0.9)";
+=======
+    $r.ctx.strokeStyle = "rgba(255,61,0 ,1)";
+>>>>>>> b653f2b669f0ca5d0a4a9069b1ae499f65f99958
     $r.ctx.beginPath();
     $r.ctx.arc(0,0,$r.r_size/2,0,endAngle, 1);
     $r.ctx.lineWidth =$r.r_thickness;
     $r.ctx.stroke();
     
     // label
+<<<<<<< HEAD
     $r.ctx.fillStyle = "#59ABE3";
+=======
+    $r.ctx.fillStyle = "#009688";
+>>>>>>> b653f2b669f0ca5d0a4a9069b1ae499f65f99958
    
     $r.ctx.font = '12px Helvetica';
     $r.ctx.fillText(label, 0, 23);
